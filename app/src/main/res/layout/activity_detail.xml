@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <!--layout container for Detail Activity-->
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,6 +22,7 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
+        <!-- main design is put in content_detail.xml-->
         <include
             android:id="@+id/content_detail"
             layout="@layout/content_detail" />

@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <!--Main design of MainActivity-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
@@ -63,22 +63,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/default_margin"
-                android:visibility="gone"
                 android:text="Other"
-                android:textSize="@dimen/default_text_size" />
+                android:textSize="@dimen/default_text_size"
+                android:visibility="gone" />
         </RadioGroup>
+
         <EditText
             android:id="@+id/otherUriEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Input target URL here"
-            android:visibility="gone"
-            android:singleLine="true"
             android:layout_marginTop="@dimen/default_margin"
-            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+            android:hint="Input target URL here"
+            android:singleLine="true"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="@+id/radioGroup"
-            />
+            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
         <com.udacity.LoadingButton
             android:id="@+id/custom_button"
             android:layout_width="0dp"
